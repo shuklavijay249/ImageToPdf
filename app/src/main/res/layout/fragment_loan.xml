@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceff1"
+    android:orientation="vertical"
+    tools:context=".LoanApplicationFragment_3"
+    tools:ignore="Overdraw"
+    android:focusableInTouchMode="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/uploadimages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/select_images_text"
+                    android:textColor="@color/mb_white" />
+
+                <Button
+                    android:id="@+id/pdfOpen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/open_pdf_text"
+                    android:textColor="@color/mb_white"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btnDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/create_pdf_text"
+                    android:textColor="@color/mb_white" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/app_name"
+                android:textColor="@color/colorAccent"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/tvNoOfImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+</RelativeLayout>
